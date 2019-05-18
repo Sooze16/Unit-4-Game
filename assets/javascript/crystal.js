@@ -1,6 +1,9 @@
+
+
+
 var winCounter = 0
 var lossCounter = 0
-
+var counter = 0;
 
 
 var targetNumber = Math.floor (Math.random() *101) + 19;
@@ -9,8 +12,6 @@ $("#number-to-guess").text(targetNumber);
 $("#wins").text(winCounter);
 $("#losses").text(lossCounter);
 
-
-var counter = 0;
 
 // Now for the hard part. Creating multiple crystals each with their own unique number value.
 
@@ -52,7 +53,7 @@ $(".crystal-image").on("click", function() {
 
   var crystalValue = ($(this).attr("data-crystalvalue"));
   crystalValue = parseInt(crystalValue);
-  console.log("this  the value clicked: ",crystalValue) 
+  console.log("this the value clicked: ",crystalValue) 
   // We then add the crystalValue to the user's "counter" which is a global variable.
   // Every click, from every crystal adds to the global counter.
   counter += crystalValue;

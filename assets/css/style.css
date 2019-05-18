@@ -2,3 +2,83 @@
     width: 300px;
     height: 300px;
   }
+
+
+  @font-face {
+    font-family: snoopy;
+    src: url(./snoopy_reg-webfont.otf)
+  } 
+
+
+  body { 
+    font-family: snoopy;
+    min-height: 100vh;
+      background: url(/assets/images/snoopydh.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  h3 {
+    margin: 20px 0px 10px 0px;
+    letter-spacing: 3px;
+  }
+  .header {
+    padding: 70px 0px 0px 0px;
+    color: grey;
+  }
+  h1, h3, #snoopysNumber, #snowflakeTotal, #wins, #losses, .score {
+    color: #5073aa;
+  }
+  h1 {
+    color: black;
+    margin: 55px 0px 75px 0px;
+    letter-spacing: 12px;
+  }
+  
+  .flakeImg {
+    width: 150px;
+    margin: 30px 0px;
+    margin-left: 55px;
+    margin: 30px auto;
+  }
+  
+  .directions {
+    font-size: 25px;
+    color: grey;
+    text-align: center;
+    padding: 20px 85px;
+  }
+  
+  /* .score {
+  @@ -49,24 +49,22 @@ h1 {
+    letter-spacing: 3px;
+  } */
+  
+  .directions {
+    padding: 20px 85px;
+  }
+  /*.directions {
+    
+  }*/
+  
+  #winOrLose {
+    color: #a182bc;
+  }
+  
+  .total {
+    padding-left: 70px;
+  }
+  
+  .scores {
+    padding-right: 70px;
+  .total, .scores, .directions {
+    margin: auto;
+  }
+  
+  .btn {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #a182bc;
+    letter-spacing: 3px;
+  }
