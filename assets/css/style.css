@@ -1,80 +1,87 @@
-@font-face {
-    font-family: snoopy;
-    src: url(./snoopy_reg-webfont.otf)
-}
-
-body {
-    font-family: snoopy;
-    background-image: url(/Unit-4-Game/assets/images/wet_snow.png);
-    background-size: cover;
-    border: 10px solid rgb(25, 162, 226);
-}
-
-h1 {
-    margin-top: 15px;
-    font-size: 55px;
-    letter-spacing: 10px;
-    color: #a182bc;
-}
-
-.directions {
-    /* margin-top: 20px; */
-    color: rgb(25, 162, 226);
-    font-size: 25px;
-}
-
-.flakeImg {
-    height: 200px;
-    width: 200px;
-}
-
-.banner {
-    border: 3px solid rgb(25, 162, 226);
-    margin-bottom: 10px;
-}
-
-.flakes {
-    margin-left: 175px;
-    border: 3px solid rgb(25, 162, 226);
-}
-
-.game {
-    /* margin-top: 25px; */
-    font-size: 25px;
-    color: rgb(25, 162, 226);
-}
-
-.btn {
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #a182bc;
-    letter-spacing: 3px;
-}
-
-.footer {
-    /* border: 5px solid #666666; */
-    /* padding-top: 25px; */
-    padding-bottom: 0;
-}
-
-#cw {
-    color: rgb(25, 162, 226);
-    /* font-family: peanuts; */
-    font-size: 23px;
-}
-
-.logo {
-    float: center;
-    /* margin-top: 5px; */
-    margin-bottom: 25px;
-    height: 70px;
-    width: 175px;
-    border: 2px solid black;
-}
-
-#winOrLose {
-    margin-top: 16px;
-    color: #a182bc;
-    font-size: 50px;
-}
+            @font-face {
+                font-family: snoopy;
+                src: url(./snoopy_reg-webfont.otf)
+            }
+            
+            body {
+                font-family: snoopy;
+                /* background-image: url(/Unit-4-Game/assets/images/wet_snow.png); */
+                background-image: url(/Unit-4-Game/assets/images/cblinuswall.jpg);
+                background-size: cover;
+                border: 5px solid rgb(25, 162, 226);
+            }
+            
+            h1 {
+                margin-top: 15px;
+                font-size: 55px;
+                letter-spacing: 10px;
+                color: #ffffff;
+            }
+            
+            .directions {
+                /* margin-top: 20px; */
+                color: #ffffff;
+                font-size: 25px;
+            }
+            
+            .flakeImg {
+                height: 200px;
+                width: 200px;
+            }
+            
+            .banner {
+                border: 3px solid rgb(25, 162, 226);
+                margin-bottom: 10px;
+            }
+            
+            .flakes {
+                margin-left: 175px;
+                border: 3px solid rgb(25, 162, 226);
+            }
+            
+            .game {
+                /* margin-left: 85px; */
+                font-size: 25px;
+                color: #1e0e68;
+            }
+            
+            .btn {
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                color: #a182bc;
+                letter-spacing: 3px;
+            }
+            
+            .footer {
+                /* border: 5px solid #666666; */
+                /* padding-top: 25px; */
+                padding-bottom: 0;
+            }
+            
+            #cw {
+                color: #ffffff;
+                /* font-family: peanuts; */
+                font-size: 23px;
+            }
+            
+            .logo {
+                /* float: center; */
+                margin-top: 5px;
+                margin-bottom: 25px;
+                height: 70px;
+                width: 175px;
+                border: 2px solid black;
+            }
+            
+            #winOrLose {
+                margin-top: 16px;
+                color: #ffffff;
+            }
+            
+            #snoopysNumber,
+            #snowFlakeTotal,
+            #wins,
+            #losses {
+                font-size: 75px;
+            }
