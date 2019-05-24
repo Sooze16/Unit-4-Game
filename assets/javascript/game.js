@@ -8,7 +8,6 @@ $(document).ready(function() {
     var snowFlakeTotal = 0;
     var wins = 0;
     var losses = 0;
-    var isPlaying = true; //Tuesday office hours - working with Phil, we created anoter variable to use to stop the game so you could not continue to press the snowflake and the losses and sum would keep adding up.
 
     //This is where we combined these vars with functions.   I had them individually listed and associated with static images in HTML. So sad...
     //Game number should be a value between 19 and 120.  Below is an example that was used in class..this made the most sense to me.
@@ -83,7 +82,7 @@ $(document).ready(function() {
     // Function to add the snowflake values together
     $(".flakeImg").on("click", function() {
 
-        if (snowFlakeTotal <= snoopysNumber) {
+        if (snowFlakeTotal < snoopysNumber) {
             var sfValue = $(this).attr("data-sfValue");
             sfValue = parseInt(sfValue); //converts number string into numeric value
             snowFlakeTotal += sfValue;
@@ -94,9 +93,11 @@ $(document).ready(function() {
                 youWin();
                 // isPlaying = false;
 
+
             } else if (snowFlakeTotal > snoopysNumber) {
                 youLose();
                 // isPlaying = false;
+
             }
         } else {
             alert("Please press PLAY AGAIN to continue.")
